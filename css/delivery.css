@@ -1,0 +1,120 @@
+.section-main {
+  padding-bottom: 101px;  
+}
+.section-main__banner {
+  background-image: url(../images/banner/banner-city.png);
+  margin-bottom: 50px;
+}
+.section-main__text {
+  margin-bottom: 25px;
+  text-align: justify;
+  padding-inline: 65px;
+}
+.section-main__title-2 {
+  margin-bottom: 10px;
+  padding-inline: 65px;
+}
+.select {
+  width: 60px;
+  height: 25px;
+  background-color: #f4f7fa;
+  border-radius: 4px;
+}
+.section-delivery {
+  display: flex;
+  justify-content: center;
+  padding: 115px var(--padding-page);
+}
+.section-delivery__cards {
+  max-width: 1108px;
+  align-self: center;
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  justify-content: center;
+
+}
+.section-delivery__card {
+  border-radius: 10px;
+  /* height: 330px; */
+  max-width: 1304px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg);
+  padding: 38px 38px 55px;
+}
+.section-delivery__title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.section-delivery__text-wrapper {
+ margin-top: auto; 
+ display: flex;
+ gap: 30px;
+ justify-content: space-between;
+}
+.section-delivery-all {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.section-delivery__text {
+  font-size: 20px;
+  margin-top: 5px;
+
+}
+.section-delivery__text:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 1000px) {
+  .section-delivery__card {
+    height: auto;
+  }
+  .section-delivery__title {
+    padding-bottom: 25px;
+  }
+  .section-delivery__text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .section-main {
+    padding-block: 27px 50px;
+  }
+  .section-main__text {
+    padding-inline: 0;
+  }
+  .section-delivery__cards {
+    flex-direction: column;
+  }
+  .section-delivery__card {
+    width: 100%;
+  }
+  .section-main__title-2 {
+    padding-inline: 0;
+
+  }
+  .section-delivery__text-wrapper {
+    flex-direction: column;
+  }
+}
+@media (max-width: 540px) {
+  .select{
+    margin-left: 0;
+    margin-right: 0px;
+  }
+  .section-delivery {
+    padding-block: 85px;
+  }
+  .section-delivery__title {
+    font-size: 20px;
+  }
+  .section-delivery__text {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RTK TIMBER Ltd.</title>
+  <link rel="stylesheet" href="css/vars.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/quality.css">
+  <link rel="stylesheet" href="css/products.css">
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+
+</head>
+
+<body>
+  <button class="btn-pop-up">
+    <img src="images/icons/question.svg" alt="иконка вопроса">
+  </button>
+  <div class="pop-up">
+    <div class="pop-up__inner">
+      <h3 class="pop-up__title lng-trans-51">Нужна помощь?</h3>
+      <p class="pop-up__text lng-trans-52">Свяжитесь с нами или перейдите в раздел с часто задаваемыми вопросами.</p>
+      <div class="pop-up__links">
+        <a class="pop-up__link pop-up__link-tel" href="tel:+37126377636">
+          <span>
+            <img src="images/icons/phone.svg" alt="иконка телефона">
+          </span>
+          <span>+371 26377636</span>
+        </a>
+        <a class="pop-up__link pop-up__link-faq" href="faq.html">
+          <span>
+            <img src="images/icons/question.svg" alt="иконка вопроса">
+          </span>
+          <span>FAQ</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="mobile-menu">
+    <nav class="mobile-menu__inner">
+      <ul class="header__nav-list--mobile">
+        <li>
+          <a class="header__nav-link lng-Delivery-mob" href="delivery.html">Доставка</a>
+        </li>
+        <li>
+          <a class="header__nav-link lng-About-mob" href="about.html">О нас</a>
+        </li>
+        <li>
+          <a class="header__nav-link lng-Quality-mob" href="quality.html">Качество</a>
+        </li>
+        <li>
+          <a class="header__nav-link lng-Contacts-mob" href="contacts.html">Контакты</a>
+        </li>
+        <li>
+          <a class="header__nav-btn--mobile lng-Start_cooperation-mob" href="products.html">Начать
+            сотрудничество</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <header class="header d-center-between">
+    <a href="index.html">
+      <img src="images/logo.svg" alt="Логотип RTK TIMBER Ltd." width="114" height="70">
+    </a>
+    <nav class="d-center">
+      <ul class="header__nav-list d-center-between">
+        <li>
+          <a class="header__nav-link lng-Delivery" href="delivery.html">Доставка</a>
+        </li>
+        <li>
+          <a class="header__nav-link lng-About" href="about.html">О нас</a>
+        </li>
+        <li>
+          <a class="header__nav-link lng-Quality" href="quality.html">Качество</a>
+        </li>
+        <li>
+          <a class="header__nav-link lng-Contacts" href="contacts.html">Контакты</a>
+        </li>
+      </ul>
+      <a class="header__nav-btn lng-Start_cooperation" href="products.html">Начать сотрудничество</a>
+      <div class="nav_links-all-mob">
+        <div class="nav_links-all-mob-top">
+          <svg class="change-lang-abs" width="17" height="17" viewBox="0 0 17 17" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M8.50033 15.5833C7.53227 15.5833 6.61734 15.3973 5.75553 15.0252C4.89373 14.653 4.14124 14.1454 3.49808 13.5022C2.85444 12.8591 2.3468 12.1066 1.97516 11.2448C1.60352 10.383 1.41746 9.46805 1.41699 8.49999C1.41699 7.52013 1.60305 6.60236 1.97516 5.7467C2.34727 4.89103 2.85491 4.14138 3.49808 3.49774C4.14124 2.8541 4.89349 2.34646 5.75483 1.97482C6.61616 1.60318 7.53133 1.41713 8.50033 1.41666C9.48019 1.41666 10.3982 1.60271 11.2543 1.97482C12.1105 2.34693 12.8599 2.85457 13.5026 3.49774C14.1462 4.14091 14.6539 4.89056 15.0255 5.7467C15.3971 6.60284 15.5832 7.5206 15.5837 8.49999C15.5837 9.46805 15.3976 10.383 15.0255 11.2448C14.6534 12.1066 14.1457 12.8593 13.5026 13.5029C12.8594 14.1461 12.1098 14.6538 11.2536 15.0259C10.3975 15.398 9.47972 15.5838 8.50033 15.5833ZM8.50033 14.1312C8.80727 13.7062 9.0729 13.2635 9.2972 12.8031C9.52151 12.3427 9.70449 11.8528 9.84616 11.3333H7.15449C7.29616 11.8528 7.47915 12.3427 7.70345 12.8031C7.92776 13.2635 8.19338 13.7062 8.50033 14.1312ZM6.65866 13.8479C6.44616 13.4583 6.26034 13.0539 6.1012 12.6345C5.94206 12.2152 5.80913 11.7815 5.70241 11.3333H3.61283C3.95519 11.9236 4.38326 12.4371 4.89703 12.8739C5.41081 13.3108 5.99802 13.6354 6.65866 13.8479ZM10.342 13.8479C11.0031 13.6354 11.5905 13.3108 12.1043 12.8739C12.6181 12.4371 13.0459 11.9236 13.3878 11.3333H11.2982C11.192 11.7819 11.0593 12.2159 10.9002 12.6352C10.741 13.0546 10.555 13.4588 10.342 13.8479ZM3.01074 9.91666H5.41908C5.38366 9.68054 5.35721 9.4475 5.33974 9.21753C5.32227 8.98756 5.3133 8.74838 5.31283 8.49999C5.31283 8.25207 5.3218 8.01313 5.33974 7.78316C5.35769 7.55318 5.38413 7.31991 5.41908 7.08332H3.01074C2.95171 7.31943 2.90756 7.55271 2.87828 7.78316C2.84901 8.0136 2.83413 8.25255 2.83366 8.49999C2.83366 8.74791 2.84853 8.98709 2.87828 9.21753C2.90803 9.44798 2.95219 9.68102 3.01074 9.91666ZM6.83574 9.91666H10.1649C10.2003 9.68054 10.227 9.4475 10.245 9.21753C10.2629 8.98756 10.2716 8.74838 10.2712 8.49999C10.2712 8.25207 10.2622 8.01313 10.2442 7.78316C10.2263 7.55318 10.1999 7.31991 10.1649 7.08332H6.83574C6.80033 7.31943 6.77388 7.55271 6.75641 7.78316C6.73894 8.0136 6.72996 8.25255 6.72949 8.49999C6.72949 8.74791 6.73846 8.98709 6.75641 9.21753C6.77435 9.44798 6.8008 9.68102 6.83574 9.91666ZM11.5816 9.91666H13.9899C14.0489 9.68054 14.0933 9.4475 14.1231 9.21753C14.1528 8.98756 14.1675 8.74838 14.167 8.49999C14.167 8.25207 14.1524 8.01313 14.1231 7.78316C14.0938 7.55318 14.0494 7.31991 13.9899 7.08332H11.5816C11.617 7.31943 11.6437 7.55271 11.6616 7.78316C11.6796 8.0136 11.6883 8.25255 11.6878 8.49999C11.6878 8.74791 11.6789 8.98709 11.6609 9.21753C11.643 9.44798 11.6165 9.68102 11.5816 9.91666ZM11.2982 5.66666H13.3878C13.0455 5.07638 12.6176 4.56284 12.1043 4.12603C11.591 3.68923 11.0036 3.36457 10.342 3.15207C10.5545 3.54166 10.7405 3.94611 10.9002 4.36545C11.0598 4.78478 11.1925 5.21852 11.2982 5.66666ZM7.15449 5.66666H9.84616C9.70449 5.14721 9.52151 4.65728 9.2972 4.19686C9.0729 3.73645 8.80727 3.29374 8.50033 2.86874C8.19338 3.29374 7.92776 3.73645 7.70345 4.19686C7.47915 4.65728 7.29616 5.14721 7.15449 5.66666ZM3.61283 5.66666H5.70241C5.80866 5.21805 5.94159 4.78407 6.1012 4.36474C6.26081 3.94541 6.44663 3.54118 6.65866 3.15207C5.99755 3.36457 5.4101 3.68923 4.89633 4.12603C4.38255 4.56284 3.95471 5.07638 3.61283 5.66666Z"
+              fill="#16A460" />
+          </svg>
+          <select class="change-lang select">
+            <!-- <option value="de">DE</option> -->
+            <option value="ru">RU</option>
+            <option value="lv">LV</option>
+            <option value="en">EN</option>
+            <!-- <option value="it">IT</option> -->
+          </select>
+        </div>
+
+        <div class="header__nav-btn-cash">
+          <div class="header__nav-btn-cash-icon">
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0.637681 0C0.468557 0 0.306361 0.0658481 0.186773 0.183058C0.0671842 0.300269 0 0.45924 0 0.625C0 0.79076 0.0671842 0.949731 0.186773 1.06694C0.306361 1.18415 0.468557 1.25 0.637681 1.25H0.95142C1.08989 1.25023 1.22451 1.29464 1.33496 1.3765C1.4454 1.45836 1.52565 1.57323 1.56359 1.70375L3.58632 8.64125C3.70072 9.03276 3.94207 9.37711 4.27387 9.62225C4.60567 9.8674 5.00988 9.99999 5.42539 10H11.2525C11.6349 10.0001 12.0086 9.88779 12.3253 9.67768C12.6419 9.46757 12.8871 9.16926 13.0291 8.82125L14.909 4.21375C14.9863 4.02416 15.015 3.8189 14.9926 3.61591C14.9703 3.41293 14.8976 3.2184 14.7808 3.04932C14.664 2.88025 14.5068 2.74178 14.3228 2.64602C14.1389 2.55026 13.9338 2.50013 13.7254 2.5H3.12209L2.78922 1.36C2.6751 0.968466 2.43405 0.623983 2.10249 0.378621C1.77092 0.133259 1.36688 0.00035546 0.95142 0H0.637681ZM5.73913 15C5.99035 15 6.23912 14.9515 6.47122 14.8573C6.70332 14.763 6.91421 14.6249 7.09185 14.4508C7.2695 14.2767 7.41041 14.07 7.50655 13.8425C7.60269 13.615 7.65217 13.3712 7.65217 13.125C7.65217 12.8788 7.60269 12.635 7.50655 12.4075C7.41041 12.18 7.2695 11.9733 7.09185 11.7992C6.91421 11.6251 6.70332 11.487 6.47122 11.3927C6.23912 11.2985 5.99035 11.25 5.73913 11.25C5.23176 11.25 4.74517 11.4475 4.3864 11.7992C4.02764 12.1508 3.82609 12.6277 3.82609 13.125C3.82609 13.6223 4.02764 14.0992 4.3864 14.4508C4.74517 14.8025 5.23176 15 5.73913 15ZM10.8406 15C11.0918 15 11.3406 14.9515 11.5727 14.8573C11.8048 14.763 12.0157 14.6249 12.1933 14.4508C12.3709 14.2767 12.5119 14.07 12.608 13.8425C12.7041 13.615 12.7536 13.3712 12.7536 13.125C12.7536 12.8788 12.7041 12.635 12.608 12.4075C12.5119 12.18 12.3709 11.9733 12.1933 11.7992C12.0157 11.6251 11.8048 11.487 11.5727 11.3927C11.3406 11.2985 11.0918 11.25 10.8406 11.25C10.3332 11.25 9.84662 11.4475 9.48785 11.7992C9.12909 12.1508 8.92753 12.6277 8.92753 13.125C8.92753 13.6223 9.12909 14.0992 9.48785 14.4508C9.84662 14.8025 10.3332 15 10.8406 15Z"
+                fill="#16A460" />
+            </svg>
+            <p>0,00 </p>
+
+            <svg class="gal" width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.1663 8.33333L5.99967 12.5L1.83301 8.33333" stroke="#16A460" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+
+
+
+          <div class="cart__dropdown-caret modal_corzina--none"></div>
+          <div class="modal_corzina modal_corzina--none">
+            <h3 class="modal_corzina-title lng-trans-330">Ваша Корзина</h3>
+            <p class="modal_corzina-empty">В корзине нет товаров</p>
+            <div class="modal_corzina-cart-all">
+              <div class="modal_corzina-cart">
+
+              </div>
+            </div>
+            <div class="modal_corzina-total">
+              <div class="modal_corzina-total-top">
+                <p class="modal_corzina-total-top-text lng-trans-331">Итого:</p>
+                <p class="modal_corzina-total-top-text modal_corzina-total-top-itogo">0,00 €</p>
+              </div>
+              <a class="modal_corzina-total-top-link" href="zakaz.html">
+                <p class="lng-trans-332">Оформить заказ</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- <div>
+        <select  class="header__nav-select" name="lang" id="select-lang">
+          <option value="RU">RU</option>
+          <option value="EN">EN</option>
+        </select>
+        <div class="header__nav-dropdown">0,00</div>
+      </div> -->
+      <button class="burger-btn">
+        <div class="burger-btn__inner">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </button>
+    </nav>
+  </header>
+  <main>
+    <section class="main-banner__wrapper section-main" style="padding-bottom: 0px;">
+      <div class="main-banner section-main__banner element-animation">
+        <h1 class="title-1 main-banner__title lng-trans-263 text-1">Гарантируем высокое качество продукции</h1>
+        <p class="main-banner__text lng-trans-264"
+          style="font-size: 18px;font-weight: 600;color: white;max-width: 665px;margin-top: 13px;">RTK TIMBER Ltd.</p>
+      </div>
+
+    </section>
+    <div class="section-products section-products-22">
+      <div class="section-products-bgc">
+        <section class="">
+          <div class="section-products_top">
+            <h3 class="section-products__title lng-trans-283">
+              Древесные гранулы
+            </h3>
+            <div class="section-products__subtitle">
+              <div class="section-products__subtitle-svg">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7 6.66667C7.21217 6.66667 7.41566 6.7369 7.56568 6.86193C7.71571 6.98695 7.8 7.15652 7.8 7.33333L7.8 11.3333C7.8 11.5101 7.71571 11.6797 7.56568 11.8047C7.41566 11.9298 7.21217 12 7 12C6.78783 12 6.58434 11.9298 6.43431 11.8047C6.28429 11.6797 6.2 11.5101 6.2 11.3333L6.2 7.33333C6.2 7.15652 6.28429 6.98695 6.43431 6.86193C6.58434 6.7369 6.78783 6.66667 7 6.66667ZM7 4C7.19778 4 7.39112 4.04887 7.55557 4.14044C7.72002 4.23201 7.84819 4.36216 7.92388 4.51443C7.99957 4.6667 8.01937 4.83426 7.98078 4.99591C7.9422 5.15756 7.84696 5.30605 7.70711 5.42259C7.56725 5.53913 7.38907 5.6185 7.19509 5.65065C7.00111 5.68281 6.80004 5.66631 6.61732 5.60323C6.43459 5.54016 6.27841 5.43335 6.16853 5.29631C6.05865 5.15927 6 4.99815 6 4.83333C6 4.61232 6.10536 4.40036 6.29289 4.24408C6.48043 4.0878 6.73478 4 7 4Z"
+                    fill="#DCF2E7" />
+                </svg>
+              </div>
+
+              <p class="lng-trans-284">Редактирование сведений о плательщике</p>
+            </div>
+          </div>
+          <div class="section-products_mid">
+            <div class="section-products_mid-left">
+              <h4 class="section-products_mid-title lng-trans-285">Транспортная упаковка:</h4>
+              <div class="section-products_mid-left-btns">
+                <button class="section-products_mid-left-btn section-products_mid-left-btns--active lng-trans-286">В
+                  паллетах</button>
+                <button class="section-products_mid-left-btn lng-trans-287">Большие сумки</button>
+              </div>
+            </div>
+            <div class="section-products_mid-rigth">
+              <h4 class="section-products_mid-title lng-trans-288">Промокод:</h4>
+              <div class="section-products_mid-right-inputs">
+                <input class="section-products_mid-right-input" type="text">
+                <button class="section-products_mid-right-btn lng-trans-289">Применить</button>
+              </div>
+            </div>
+          </div>
+
+        </section>
+        <section class="section-proucts__list element-animation">
+          <ul class="products-list-2">
+            <li class="products-list__item-2">
+              <img class="products-list__item-2-abg" src="./images/Background.png" alt="">
+              <div class="products-list__item-2-top">
+                <div class="products-list__item-2-top-all">
+                  <div class="products-list__item-2-top-left">
+                    <h5>RichWood Premium</h5>
+                    <p class="lng-trans-260">Bagātīga koksne (priede, egle)</p>
+                  </div>
+                  <div class="products-list__item-2-top-right">
+                    <img src="./images/img1.png" alt="">
+                  </div>
+                </div>
+                <a href="" class="products-list__item-2-top-text">ENplus® A1 quality - certificate ID No EN324</a>
+              </div>
+              <div class="products-list__item-2-mid">
+                <div class="products-list__item-2-mid-left">
+                  <img src="./images/ic1.svg" style="max-width: 20px;" alt="">
+                  <div class="products-list__item-2-mid-left-texts">
+                    <span class="products-list__item-2-mid-left-span">Bags 70 x 15 kg</span>
+                    <p class="products-list__item-2-mid-left-text">1050 kg</p>
+                  </div>
+                </div>
+                <div class="products-list__item-2-mid-right">
+                  <img src="./images/ic2.svg" style="max-width: 20px;" alt="">
+                  <div class="products-list__item-2-mid-left-texts">
+                    <span class="products-list__item-2-mid-left-span">Granulu diametrs</span>
+                    <p class="products-list__item-2-mid-left-text">6 mm</p>
+                  </div>
+                </div>
+              </div>
+              <div class="products-list__item-2-bot">
+                <ul class="products-list__item-2-bot-list">
+                  <li class="products-list__item-2-bot-item">
+                    <p class="products-list__item-2-bot-item-text lng-trans-265">Cena EUR/t:</p>
+                    <div class="products-list__item-2-bot-item-prices">
+                      <!-- <strike class="products-list__item-2-bot-item-strike">220,00 €</strike> -->
+                      <span class="products-list__item-2-bot-item-span">237,44 €</span>
+                    </div>
+
+                  </li>
+                  <li class="products-list__item-2-bot-item">
+                    <p class="products-list__item-2-bot-item-text lng-trans-266">Cena par vienu paleti:</p>
+                    <div class="products-list__item-2-bot-item-prices">
+                      <!-- <strike class="products-list__item-2-bot-item-strike">214,50 €</strike> -->
+                      <span class="products-list__item-2-bot-item-span">212,00 €</span>
+                    </div>
+                  </li>
+                  <li class="products-list__item-2-bot-item">
+                    <p class="products-list__item-2-bot-item-text-3 lng-trans-267">Palešu kopējais svars:</p>
+
+                    <span class="products-list__item-2-bot-item-span-3">975kg</span>
+                  </li>
+                  <li class="products-list__item-2-bot-item">
+                    <p class="products-list__item-2-bot-item-text lng-trans-268">Kopā ar PVN 0% (0.975t):</p>
+                    <div class="products-list__item-2-bot-item-prices products-list__item-2-bot-item-prices-2">
+                      <!-- <strike class="products-list__item-2-bot-item-strike">214,50 €</strike> -->
+                      <span class="products-list__item-2-bot-item-spanBig">212,00 €</span>
+                    </div>
+                  </li>
+                </ul>
+                <div class="products-list__item-2-bot-btns">
+                  <a href="zakaz.html" class="products-list__item-2-bot-btnPay">
+                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7.04545 20C7.9994 20 8.77273 19.1941 8.77273 18.2C8.77273 17.2059 7.9994 16.4 7.04545 16.4C6.09151 16.4 5.31818 17.2059 5.31818 18.2C5.31818 19.1941 6.09151 20 7.04545 20ZM14.8182 20C15.7721 20 16.5455 19.1941 16.5455 18.2C16.5455 17.2059 15.7721 16.4 14.8182 16.4C13.8642 16.4 13.0909 17.2059 13.0909 18.2C13.0909 19.1941 13.8642 20 14.8182 20ZM4.13745 2L4.95459 3.8H20L16.5455 11.9H8.18545L6.97636 13.7H16.5455V15.5H5.31818C4.65275 15.5 4.24964 14.7566 4.55888 14.1705L4.61066 14.0839L6.46423 11.3231L3.04423 3.8H1V2H4.13745Z"
+                        fill="white" />
+                    </svg>
+                    <p class="lng-trans-269">Купить</p>
+                  </a>
+                  <button class="products-list__item-2-bot-btn">
+                    <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M6.04091 14.4C6.99414 14.4 7.76689 15.2059 7.76689 16.2C7.76689 17.1941 6.99414 18 6.04091 18C5.08768 18 4.31494 17.1941 4.31494 16.2C4.31494 15.2059 5.08768 14.4 6.04091 14.4ZM13.8078 14.4C14.761 14.4 15.5338 15.2059 15.5338 16.2C15.5338 17.1941 14.761 18 13.8078 18C12.8546 18 12.0818 17.1941 12.0818 16.2C12.0818 15.2059 12.8546 14.4 13.8078 14.4ZM3.1498 0L6.60099 8.1H14.5327L16.3821 3.6H15.5338V1.8H19L15.6713 9.9H7.18006L5.97187 11.7H15.5338V13.5H4.31494C3.65001 13.5 3.2472 12.7566 3.55621 12.1705L3.60795 12.0839L5.32118 9.5283L2.02802 1.8H0V0H3.1498ZM11.2188 0V3.6H12.9448L10.3559 6.3L7.76689 3.6H9.49286V0H11.2188Z"
+                        fill="#153333" />
+                    </svg>
+                    <p class="lng-trans-270">Добавить в корзину </p>
+
+                  </button>
+                </div>
+
+              </div>
+            </li>
+            <li class="products-list__item-2">
+              <img class="products-list__item-2-abg" src="./images/Background.png" alt="">
+              <div class="products-list__item-2-top">
+                <div class="products-list__item-2-top-all">
+                  <div class="products-list__item-2-top-left">
+                    <h5>Whitewood</h5>
+                    <p class="lng-trans-261">Baltkoksne (priede, egle)</p>
+                  </div>
+                  <div class="products-list__item-2-top-right">
+                    <img src="./images/img2.png" alt="">
+                  </div>
+                </div>
+                <a href="" class="products-list__item-2-top-text">ENplus® A1 quality - certificate ID No EE001</a>
+              </div>
+              <div class="products-list__item-2-mid">
+                <div class="products-list__item-2-mid-left">
+                  <img src="./images/ic1.svg" style="max-width: 20px;" alt="">
+                  <div class="products-list__item-2-mid-left-texts">
+                    <span class="products-list__item-2-mid-left-span">Bags 65 x 15 kg</span>
+                    <p class="products-list__item-2-mid-left-text">975 kg</p>
+                  </div>
+                </div>
+                <div class="products-list__item-2-mid-right">
+                  <img src="./images/ic2.svg" style="max-width: 20px;" alt="">
+                  <div class="products-list__item-2-mid-left-texts">
+                    <span class="products-list__item-2-mid-left-span">Granulu diametrs</span>
+                    <p class="products-list__item-2-mid-left-text">6 mm</p>
+                  </div>
+                </div>
+              </div>
+              <div class="products-list__item-2-bot">
+                <ul class="products-list__item-2-bot-list">
+                  <li class="products-list__item-2-bot-item">
+                    <p class="products-list__item-2-bot-item-text lng-trans-271">Cena EUR/t:</p>
+                    <div class="products-list__item-2-bot-item-prices">
+                      <!-- <strike class="products-list__item-2-bot-item-strike">220,00 €</strike> -->
+                      <span class="products-list__item-2-bot-item-span">237,00 €</span>
+                    </div>
+
+                  </li>
+                  <li class="products-list__item-2-bot-item">
+                    <p class="products-list__item-2-bot-item-text lng-trans-272">Cena par vienu paleti:</p>
+                    <div class="products-list__item-2-bot-item-prices">
+                      <!-- <strike class="products-list__item-2-bot-item-strike">214,50 €</strike> -->
+                      <span class="products-list__item-2-bot-item-span">212,00 €</span>
+                    </div>
+                  </li>
+                  <li class="products-list__item-2-bot-item">
+                    <p class="products-list__item-2-bot-item-text-3 lng-trans-273">Palešu kopējais svars:</p>
+
+                    <span class="products-list__item-2-bot-item-span-3">975kg</span>
+                  </li>
+                  <li class="products-list__item-2-bot-item">
+                    <p class="products-list__item-2-bot-item-text lng-trans-274">Kopā ar PVN 0% (0.975t):</p>
+                    <div class="products-list__item-2-bot-item-prices products-list__item-2-bot-item-prices-2">
+                      <!-- <strike class="products-list__item-2-bot-item-strike">214,50 €</strike> -->
+                      <span class="products-list__item-2-bot-item-spanBig">212,00 €</span>
+                    </div>
+                  </li>
+                </ul>
+                <div class="products-list__item-2-bot-btns">
+                  <a href="zakaz.html" class="products-list__item-2-bot-btnPay">
+                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7.04545 20C7.9994 20 8.77273 19.1941 8.77273 18.2C8.77273 17.2059 7.9994 16.4 7.04545 16.4C6.09151 16.4 5.31818 17.2059 5.31818 18.2C5.31818 19.1941 6.09151 20 7.04545 20ZM14.8182 20C15.7721 20 16.5455 19.1941 16.5455 18.2C16.5455 17.2059 15.7721 16.4 14.8182 16.4C13.8642 16.4 13.0909 17.2059 13.0909 18.2C13.0909 19.1941 13.8642 20 14.8182 20ZM4.13745 2L4.95459 3.8H20L16.5455 11.9H8.18545L6.97636 13.7H16.5455V15.5H5.31818C4.65275 15.5 4.24964 14.7566 4.55888 14.1705L4.61066 14.0839L6.46423 11.3231L3.04423 3.8H1V2H4.13745Z"
+                        fill="white" />
+                    </svg>
+                    <p class="lng-trans-275">Купить</p>
+                  </a>
+                  <button class="products-list__item-2-bot-btn">
+                    <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M6.04091 14.4C6.99414 14.4 7.76689 15.2059 7.76689 16.2C7.76689 17.1941 6.99414 18 6.04091 18C5.08768 18 4.31494 17.1941 4.31494 16.2C4.31494 15.2059 5.08768 14.4 6.04091 14.4ZM13.8078 14.4C14.761 14.4 15.5338 15.2059 15.5338 16.2C15.5338 17.1941 14.761 18 13.8078 18C12.8546 18 12.0818 17.1941 12.0818 16.2C12.0818 15.2059 12.8546 14.4 13.8078 14.4ZM3.1498 0L6.60099 8.1H14.5327L16.3821 3.6H15.5338V1.8H19L15.6713 9.9H7.18006L5.97187 11.7H15.5338V13.5H4.31494C3.65001 13.5 3.2472 12.7566 3.55621 12.1705L3.60795 12.0839L5.32118 9.5283L2.02802 1.8H0V0H3.1498ZM11.2188 0V3.6H12.9448L10.3559 6.3L7.76689 3.6H9.49286V0H11.2188Z"
+                        fill="#153333" />
+                    </svg>
+                    <p class="lng-trans-276">Добавить в корзину </p>
+
+                  </button>
+                </div>
+
+              </div>
+            </li>
+            <li class="products-list__item-2">
+              <img class="products-list__item-2-abg" src="./images/Background.png" alt="">
+              <div class="products-list__item-2-top">
+                <div class="products-list__item-2-top-all">
+                  <div class="products-list__item-2-top-left">
+                    <h5>Big bag</h5>
+                    <p class="lng-trans-262">Liels maiss (priedes, egles)</p>
+                  </div>
+                  <div class="products-list__item-2-top-right">
+                    <img src="./images/img3.png" alt="">
+                  </div>
+                </div>
+                <a href="" class="products-list__item-2-top-text">ENplus® A1 quality - certificate ID No EN324</a>
+              </div>
+              <div class="products-list__item-2-mid">
+                <div class="products-list__item-2-mid-left">
+                  <img src="./images/ic1.svg" style="max-width: 20px;" alt="">
+                  <div class="products-list__item-2-mid-left-texts">
+                    <span class="products-list__item-2-mid-left-span">Bags 70 x 15 kg</span>
+                    <p class="products-list__item-2-mid-left-text">1050 kg</p>
+                  </div>
+                </div>
+                <div class="products-list__item-2-mid-right">
+                  <img src="./images/ic2.svg" style="max-width: 20px;" alt="">
+                  <div class="products-list__item-2-mid-left-texts">
+                    <span class="products-list__item-2-mid-left-span">Granulu diametrs</span>
+                    <p class="products-list__item-2-mid-left-text">6 mm</p>
+                  </div>
+                </div>
+              </div>
+              <div class="products-list__item-2-bot">
+                <ul class="products-list__item-2-bot-list">
+                  <li class="products-list__item-2-bot-item">
+                    <p class="products-list__item-2-bot-item-text lng-trans-277">Cena EUR/t:</p>
+                    <div class="products-list__item-2-bot-item-prices">
+                      <!-- <strike class="products-list__item-2-bot-item-strike">220,00 €</strike> -->
+                      <span class="products-list__item-2-bot-item-span">237,00 €</span>
+                    </div>
+
+                  </li>
+                  <li class="products-list__item-2-bot-item">
+                    <p class="products-list__item-2-bot-item-text lng-trans-278">Cena par vienu paleti:</p>
+                    <div class="products-list__item-2-bot-item-prices">
+                      <!-- <strike class="products-list__item-2-bot-item-strike">214,50 €</strike> -->
+                      <span class="products-list__item-2-bot-item-span">212,00 €</span>
+                    </div>
+                  </li>
+                  <li class="products-list__item-2-bot-item">
+                    <p class="products-list__item-2-bot-item-text-3 lng-trans-279">Palešu kopējais svars:</p>
+
+                    <span class="products-list__item-2-bot-item-span-3">975kg</span>
+                  </li>
+                  <li class="products-list__item-2-bot-item">
+                    <p class="products-list__item-2-bot-item-text lng-trans-280">Kopā ar PVN 0% (0.975t):</p>
+                    <div class="products-list__item-2-bot-item-prices products-list__item-2-bot-item-prices-2">
+                      <!-- <strike class="products-list__item-2-bot-item-strike">214,50 €</strike> -->
+                      <span class="products-list__item-2-bot-item-spanBig">212,00 €</span>
+                    </div>
+                  </li>
+                </ul>
+                <div class="products-list__item-2-bot-btns">
+                  <a href="zakaz.html" class="products-list__item-2-bot-btnPay">
+                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7.04545 20C7.9994 20 8.77273 19.1941 8.77273 18.2C8.77273 17.2059 7.9994 16.4 7.04545 16.4C6.09151 16.4 5.31818 17.2059 5.31818 18.2C5.31818 19.1941 6.09151 20 7.04545 20ZM14.8182 20C15.7721 20 16.5455 19.1941 16.5455 18.2C16.5455 17.2059 15.7721 16.4 14.8182 16.4C13.8642 16.4 13.0909 17.2059 13.0909 18.2C13.0909 19.1941 13.8642 20 14.8182 20ZM4.13745 2L4.95459 3.8H20L16.5455 11.9H8.18545L6.97636 13.7H16.5455V15.5H5.31818C4.65275 15.5 4.24964 14.7566 4.55888 14.1705L4.61066 14.0839L6.46423 11.3231L3.04423 3.8H1V2H4.13745Z"
+                        fill="white" />
+                    </svg>
+                    <p class="lng-trans-281">Купить</p>
+                  </a>
+                  <button class="products-list__item-2-bot-btn">
+                    <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M6.04091 14.4C6.99414 14.4 7.76689 15.2059 7.76689 16.2C7.76689 17.1941 6.99414 18 6.04091 18C5.08768 18 4.31494 17.1941 4.31494 16.2C4.31494 15.2059 5.08768 14.4 6.04091 14.4ZM13.8078 14.4C14.761 14.4 15.5338 15.2059 15.5338 16.2C15.5338 17.1941 14.761 18 13.8078 18C12.8546 18 12.0818 17.1941 12.0818 16.2C12.0818 15.2059 12.8546 14.4 13.8078 14.4ZM3.1498 0L6.60099 8.1H14.5327L16.3821 3.6H15.5338V1.8H19L15.6713 9.9H7.18006L5.97187 11.7H15.5338V13.5H4.31494C3.65001 13.5 3.2472 12.7566 3.55621 12.1705L3.60795 12.0839L5.32118 9.5283L2.02802 1.8H0V0H3.1498ZM11.2188 0V3.6H12.9448L10.3559 6.3L7.76689 3.6H9.49286V0H11.2188Z"
+                        fill="#153333" />
+                    </svg>
+                    <p class="lng-trans-282">Добавить в корзину </p>
+
+                  </button>
+                </div>
+
+              </div>
+            </li>
+
+
+          </ul>
+        </section>
+      </div>
+
+    </div>
+
+    <section class="section-contacts element-animation">
+      <h2 class="title-1 section-contacts__title lng-trans-17">Контактная информация</h2>
+      <p class="section-contacts__text lng-trans-18">Если у вас возник вопрос или вы хотите начать сотрудничество,
+        заполните форму ниже, и мы свяжемся с вами в ближайшие дни.</p>
+      <div class="section-contacts__content">
+        <div class="section-contacts__left">
+          <div class="section-contacts__map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2179.3280227084438!2d24.215294577461563!3d56.89176417352711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eed25c996e2869%3A0xe9f9d55bf4d96d21!2sAtbalss%20iela%205%2C%20Latgales%20priek%C5%A1pils%C4%93ta%2C%20R%C4%ABga%2C%20LV-1063%2C%20Latvija!5e0!3m2!1slv!2sru!4v1727194681802!5m2!1slv!2sru"
+              width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+        </div>
+        <div class="section-contacts__right">
+          <form class="section-contacts__form">
+            <label>
+              <span class="lng-trans-19">Имя</span>
+              <input name="name" type="text" placeholder="Enter a name*">
+            </label>
+            <label>
+              <span class="lng-trans-20">Фамилия</span>
+              <input type="text" placeholder="Enter surname*">
+            </label>
+            <label>
+              <span class="lng-trans-21">Адрес почты</span>
+              <input type="email" placeholder="Enter email*">
+            </label>
+            <label>
+              <span class="lng-trans-22">Номер</span>
+              <input type="tel" placeholder="Enter the number*">
+            </label>
+            <label class="section-contacts__form-message">
+              <span class="lng-trans-23">Ваше сообщение</span>
+              <textarea name="message" id="message" placeholder="Enter a message......"></textarea>
+            </label>
+            <div class="checkbox_bot checkbox_bot-one">
+              <input type="checkbox" id="myCheckbox" class="demoCustomCheckbox">
+              <label for="myCheckbox" class="polit_p">
+                <p class="polit_p lng-trans-132">Даю согласие на отправку информационно-рекламной рассылки организации
+                </p>
+              </label>
+
+            </div>
+            <div class="checkbox_bot checkbox_bot-two">
+              <input type="checkbox" id="myCheckbox" class="demoCustomCheckbox">
+              <label for="myCheckbox" class="polit_p">
+                <p class="polit_p lng-trans-133">Я подтверждаю, что ознакомлен <a href="PrivātumaPolitika.pdf">политикой
+                    конфиденциальности</a></p>
+              </label>
+
+
+            </div>
+            <div class="g-recaptcha" data-sitekey="6LdxVH4qAAAAAKOqqdDh-x_Ab4xjEPKzSQX-MD1V"></div>
+
+            <button class="section-contacts__form-btn lng-trans-24">Отправить обращение</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div>
+      <h2 class="title-1 footer__title lng-trans-25">Выдающееся качество</h2>
+      <div class="prevart_all">
+        <a class="privart lng-trans-130" href="polit.html">Политика конфиденциальности</a>
+        <a class="privart lng-trans-131" href="polSogl.html">Пользовательское соглашение</a>
+      </div>
+      <div class="footer_all">
+        <div class="footer__text-all">
+          <p class="footer__text lng-trans-26">Компания SIA "RTK TIMBER" сертифицирована ENplus® A1
+          </p>
+          <img src="images/lv324.png" alt="" width="90px">
+        </div>
+        <div class="footer__contacts">
+          <!-- <div class="footer__contact">
+            <div class="footer__contact-icon">
+              <img src="images/icons/letter.svg" alt="иконка">
+            </div>
+            <a href="mailto:dsasdasd@sample.com">dsasdasd@sample.com</a>
+          </div> -->
+          <div class="footer__contact">
+            <div class="footer__contact-icon">
+              <img src="images/icons/phone-active.svg" alt="иконка">
+            </div>
+            <a href="tel:+37126377636">+371 26377636</a>
+          </div>
+          <!-- <div class="footer__contact"> 
+            <div class="footer__contact-icon">
+              <img src="images/icons/geo-mark.svg" alt="иконка" width="24" height="28">
+            </div>
+            <div>
+              <p>
+                SIA "RTK TIMBER"
+              </p>
+              <p>
+                LV40103822821
+              </p>
+              <p>         
+                Stabu iela 62-8 LV 1009
+              </p>
+            </div>
+          </div> -->
+        </div>
+      </div>
+
+    </div>
+    <!-- <div class="footer__right-wrapper">
+      <div class="footer__right">
+        <img src="images/certificate/certificate-4.png" alt="сертификат 4">
+        <img src="images/certificate/certificate-3.png" alt="сертификат 3">
+        <img src="images/certificate/certificate-2.png" alt="сертификат 2">
+        <img src="images/certificate/certificate-1.png" alt="сертификат 1">
+      </div>
+    </div> -->
+  </footer>
+  <script src="js/index.js"></script>
+  <script src="js/lang.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/product.js"></script>
+</body>
+
+</html>
