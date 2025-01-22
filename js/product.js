@@ -353,6 +353,7 @@ if (localStorage.getItem('corzina')) {
         
         const svg = e.target.closest('.close')
         const btnPlus = e.target.closest('.modal_corzina-cart-plus')
+        const btnMinus = e.target.closest('.modal_corzina-cart-minus')
         if (svg) {
         if ( svg.classList.value == 'close') {
             const card2 = svg.parentElement
