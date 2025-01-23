@@ -157,9 +157,9 @@
 
       <div class="section-products_all">
         <div class="section-products-left">
-          <h1 class="form_zakaz-title lng-trans-290">Информация для клиентов</h1>
+          <h1 class="form_zakaz-title lng-trans-290 element-animation">Информация для клиентов</h1>
           <form action="" class="form_zakaz">
-            <div class="form_zakaz-top">
+            <div class="form_zakaz-top element-animation">
               <div class="form_zakaz-inputs">
                 <label class="form_zakaz-label" for="country">
                   <p class="lng-trans-291">Страна клиента</p> <span class="form_zakaz-label-span">*</span>
@@ -167,6 +167,7 @@
                 <select class="form_zakaz-select" name="country" id="">
                   <option class="form_zakaz-option lng-trans-292" value="Russia">Россия</option>
                   <option class="form_zakaz-option lng-trans-293" value="Latvia">Латвия</option>
+                  <option class="form_zakaz-option lng-trans-2922" value="Latvia">Латвия</option>
                 </select>
                 <!-- <input class="form_zakaz-input" type="text" placeholder="Latvija" name="country" id="country"> -->
               </div>
@@ -174,7 +175,8 @@
                 <label class="form_zakaz-label" for="natural">
                   <p class="lng-trans-294">Личный статус клиента</p> <span class="form_zakaz-label-span">*</span>
                 </label>
-                <div class="form_zakaz-inputs_all">
+                <div class="form_zakaz-inputs_all"
+                  style="padding-bottom: 30px;border-bottom: 1px solid #B9D1C6;margin-bottom: 30px;">
                   <div class="form_zakaz-inputs_all-bgc">
                     <input class="form_zakaz-inputs_all-checkbox" type="checkbox" name="natural" id="natural">
                     <p class="form_zakaz-inputs_all-bgc-text lng-trans-295">Физическое лицо</p>
@@ -185,7 +187,7 @@
                   </div>
                 </div>
               </div>
-              <div class="form_zakaz-inputs"
+              <!-- <div class="form_zakaz-inputs"
                 style="padding-bottom: 30px;border-bottom: 1px solid #B9D1C6;margin-bottom: 30px;">
                 <label class="form_zakaz-label " for="nds">
                   <p class="lng-trans-297">Зарегистрированы ли вы в качестве плательщика НДС?</p>
@@ -201,9 +203,9 @@
                     <p class="form_zakaz-inputs_all-bgc-text lng-trans-299">Нет, я не плательщик НДС</p>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
-            <div class="form_zakaz-bot">
+            <div class="form_zakaz-bot element-animation">
               <div class="form_zakaz-inputs">
                 <label class="form_zakaz-label" for="name">
                   <p class="lng-trans-300">Имя</p> <span class="form_zakaz-label-span">*</span>
@@ -236,7 +238,7 @@
               </div>
             </div>
             <h1 class="form_zakaz-title lng-trans-305">Информация о доставке</h1>
-            <div class="form_zakaz-delivery">
+            <div class="form_zakaz-delivery element-animation">
               <label class="form_zakaz-label" for="">
                 <p class="lng-trans-306">Выберите способ доставки</p> <span class="form_zakaz-label-span">*</span>
 
@@ -354,7 +356,7 @@
             <button class="form-submit lng-trans-318" type="submit">Перейти к оплате</button>
           </form>
         </div>
-        <div class="section-products-right">
+        <div class="section-products-right element-animation">
           <h4 class="section-products-right-titles lng-trans-320">Краткий обзор</h4>
           <div class="section-products-right-top">
             <div class="section-products-right-top-all">
@@ -399,6 +401,13 @@
               <div class="section-products-right-mid-droplist-one">
                 <p class="section-products-right-mid-droplist-one-p lng-trans-329">Адрес:</p>
                 <span class="section-products-right-mid-droplist-one-span">-</span>
+              </div>
+              <div class="section-products-right-mid-droplist-one">
+                <p class="section-products-right-mid-droplist-one-p lng-trans-334">НДС</p>
+                <span
+                  class="section-products-right-mid-droplist-one-span lng-trans-335 droplist-one-span--none">Да</span>
+                <span class="section-products-right-mid-droplist-one-span lng-trans-336">Нет</span>
+
               </div>
             </div>
           </div>
@@ -473,7 +482,7 @@
   <script src="js/lang.js"></script>
   <script src="js/scroll.js"></script>
   <script src="js/product.js"></script>
-  <script src="js/zakaz.js"></script>
+  <!-- <script src="js/zakaz.js"></script> -->
 </body>
 
 </html>

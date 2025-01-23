@@ -628,6 +628,9 @@
 .section-products-right-top-droplist--none {
     display: none;
 }
+.droplist-one-span--none {
+    display: none;
+}
 @media (max-width: 1366px) {
     .form_zakaz-title {
         color: #092B3C;

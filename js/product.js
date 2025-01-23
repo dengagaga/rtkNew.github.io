@@ -14,6 +14,9 @@ const sectionOneDroplist2  = document.querySelector('.section-products-right-mid
 const sectionProductsRightTopAll  = document.querySelector('.section-products-right-top-all')
 const productsListBtnPay  = document.querySelectorAll('.products-list__item-2-bot-btnPay')
 let cardArray = localStorage.getItem('corzina') ? JSON.parse(localStorage.getItem('corzina')) : []
+
+const naturalCheckbox = document.getElementById('natural');
+const legalCheckbox = document.getElementById('legal');
 const html = (item) => {
     return `<div class="modal_corzina-cart">
     <svg class="close" width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -136,8 +139,8 @@ if (localStorage.getItem('corzina')) {
                 const plus = e.target.closest('.section-products-right-top-droplist-two-btn')
                 const minus = e.target.closest('.section-products-right-top-droplist-two-btn-minus')
                 
-                
-                if (plus.classList.value == 'section-products-right-top-droplist-two-btn') {
+                if (plus) {
+                      if (plus.classList.value == 'section-products-right-top-droplist-two-btn') {
                     const card = plus.closest('.section-products-right-top-droplist-item')
                     const cardTitle = card.querySelector('.section-products-right-top-droplist-one').children[0].textContent
                     console.log(card, cardTitle);
@@ -159,8 +162,10 @@ if (localStorage.getItem('corzina')) {
                     itog.innerHTML = `${cardArray.reduce((acc, item) => acc + parseFloat(item.price.replace('€', '').trim().replace(',', '.')) * item.count, 0)} €`
                     localStorage.setItem('corzina', JSON.stringify(cardArray))
                 }
-                console.log(minus.classList.value);
-                if (minus.classList.value == 'section-products-right-top-droplist-two-btn section-products-right-top-droplist-two-btn-minus') {
+                }
+              
+               if (minus) {
+                 if (minus.classList.value == 'section-products-right-top-droplist-two-btn section-products-right-top-droplist-two-btn-minus') {
                     console.log('minus');
                     
                     const card = minus.closest('.section-products-right-top-droplist-item')
@@ -184,6 +189,10 @@ if (localStorage.getItem('corzina')) {
                     itog.innerHTML = `${cardArray.reduce((acc, item) => acc + parseFloat(item.price.replace('€', '').trim().replace(',', '.')) * item.count, 0)} €`
                     localStorage.setItem('corzina', JSON.stringify(cardArray))
                 }
+               }
+               
+
+               
             })
             
 
@@ -429,13 +438,31 @@ if (localStorage.getItem('corzina')) {
 
 
 
+const productslisitem2one = document.querySelector('.products-list__item-2-one')
+const productslisitem2two = document.querySelector('.products-list__item-2-two')
+const productslisitem2three = document.querySelector('.products-list__item-2-three')
+const btn1 = document.querySelector('.lng-trans-286')
+const btn2 = document.querySelector('.lng-trans-287')
 
-
+btn1.addEventListener('click', () => {
+    console.log('В паллетах');
+    productslisitem2three.classList.add('droplist-one-span--none')
+    productslisitem2one.classList.remove('droplist-one-span--none')
+    productslisitem2two.classList.remove('droplist-one-span--none')
+})
+btn2.addEventListener('click', () => {
+    console.log('Большие сумки');
+    productslisitem2three.classList.remove('droplist-one-span--none')
+    productslisitem2one.classList.add('droplist-one-span--none')
+    productslisitem2two.classList.add('droplist-one-span--none')
+})
 sectionBtns.forEach(btn => {
     btn.addEventListener('click', () => {
         sectionBtns.forEach(btn => {
             btn.classList.remove('section-products_mid-left-btns--active')
         })
+        console.log(btn.textContent );
+        
         btn.classList.add('section-products_mid-left-btns--active')
     })
 })
@@ -458,10 +485,14 @@ productsListItemBotBtn.forEach(btn => {
         const cardImg = card.querySelector('.products-list__item-2-top-right').children[0].src
         const cardTitle = card.querySelector('.products-list__item-2-top-left').children[0].textContent
         const cardPrice = card.querySelector('.products-list__item-2-bot-item-prices-2').children[0].textContent
+        const cardPriceNds = card.querySelector('.products-list__item-2-bot').children[0].children[0].children[1].children[0].textContent
+        console.log(cardPriceNds);
+        
         const obj = {
             img: cardImg,
             title: cardTitle,
             price: cardPrice,
+            priceNds: cardPriceNds,
             count: 1
         }
         let exists = cardArray.filter(item => item.title == obj.title);
@@ -595,3 +626,40 @@ if (formZakazDeliveryItem3) {
     })
 }
 
+
+const yes = document.querySelector('.lng-trans-335')
+const no = document.querySelector('.lng-trans-336')
+
+// const nds = document.getElementById('nds');
+// const nonds = document.getElementById('nonds');
+if (naturalCheckbox) {
+    naturalCheckbox.addEventListener('change', function() {
+        if (this.checked) {
+            legalCheckbox.checked = false; // Снимаем отметку со второго чекбокса
+            const itog = document.querySelector('.section-products-right-bot-span')
+            itog.innerHTML = `${(cardArray.reduce((acc, item) => acc + parseFloat(item.price.replace('€', '').trim().replace(',', '.')) * item.count, 0) + cardArray.reduce((acc, item) => acc + parseFloat(item.price.replace('€', '').trim().replace(',', '.')) * item.count, 0) * 12 / 100).toFixed(0)}  €`
+            localStorage.setItem('Ur', ' natural')
+            yes.classList.remove('droplist-one-span--none')
+            no.classList.add('droplist-one-span--none')
+
+        } else {
+            legalCheckbox.disabled = false; // Включаем второй чекбокс, если первый не отмечен
+        }
+    });
+}
+
+if (legalCheckbox) {
+    legalCheckbox.addEventListener('change', function() {
+        if (this.checked) {
+            naturalCheckbox.checked = false; // Снимаем отметку с первого чекбокса
+             const itog = document.querySelector('.section-products-right-bot-span')
+            itog.innerHTML = `${cardArray.reduce((acc, item) => acc + parseFloat(item.price.replace('€', '').trim().replace(',', '.')) * item.count, 0)}  €`
+            localStorage.setItem('Ur', ' legal')
+           
+            yes.classList.add('droplist-one-span--none')
+            no.classList.remove('droplist-one-span--none')
+        } else {
+            naturalCheckbox.disabled = false; // Включаем первый чекбокс, если второй не отмечен
+        }
+    });
+}

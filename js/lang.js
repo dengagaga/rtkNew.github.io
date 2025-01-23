@@ -2096,11 +2096,11 @@ const langArr = {
         "en": 'Client s country '
     },
     "trans-292": {
-        'ru': 'Россия',
+        'ru': 'Литва',
         'de': '',
-        'lv': 'Krievija',
+        'lv': 'Lietuva',
         "it": '',
-        "en": 'Russia'
+        "en": 'Lithuania'
     },
     "trans-293": {
         'ru': 'Латвия',
@@ -2108,6 +2108,13 @@ const langArr = {
         'lv': 'Latvija',
         "it": '',
         "en": 'Latvia'
+    },
+    "trans-2922": {
+        'ru': 'Эстония',
+        'de': '',
+        'lv': 'Igaunija',
+        "it": '',
+        "en": 'Estonia'
     },
     "trans-294": {
         'ru': 'Личный статус клиента',
@@ -2388,6 +2395,27 @@ const langArr = {
         'lv': 'Paletes skaits:',
         "it": '',
         "en": 'Number of pallets:'
+    },
+    "trans-334": {
+        'ru': 'НДС',
+        'de': '',
+        'lv': 'PVN',
+        "it": '',
+        "en": 'VAT'
+    },
+    "trans-335": {
+        'ru': 'Да',
+        'de': '',
+        'lv': 'Jā',
+        "it": '',
+        "en": 'Yes'
+    },
+    "trans-336": {
+        'ru': 'Нет',
+        'de': '',
+        'lv': 'Nē',
+        "it": '',
+        "en": 'No'
     },
 
 }
