@@ -565,6 +565,7 @@ if (sectionProductsRightMidAll) {
 
 const formZakazDeliveryItem = document.querySelectorAll('.form_zakaz-delivery-item')
 const formZakazDeliveryItem1 = document.querySelector('.form_zakaz-delivery-item-one')
+const formZakazDeliveryItem2 = document.querySelector('.form_zakaz-delivery-item-two')
 const formZakazDeliveryItem3 = document.querySelector('.form_zakaz-delivery-item-three')
 const lngTrans326 = document.querySelector('.lng-trans-326')
 
@@ -581,6 +582,11 @@ formZakazDeliveryItem.forEach(item => {
 if (formZakazDeliveryItem1) {
     formZakazDeliveryItem1.addEventListener('click', () => {
         lngTrans326.textContent = 'Стандартная доставка'
+    })
+}
+if (formZakazDeliveryItem2) {
+    formZakazDeliveryItem2.addEventListener('click', () => {
+        lngTrans326.textContent = 'Доставка грузов'
     })
 }
 if (formZakazDeliveryItem3) {
