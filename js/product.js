@@ -443,19 +443,23 @@ const productslisitem2two = document.querySelector('.products-list__item-2-two')
 const productslisitem2three = document.querySelector('.products-list__item-2-three')
 const btn1 = document.querySelector('.lng-trans-286')
 const btn2 = document.querySelector('.lng-trans-287')
+if (btn1) {
+    btn1.addEventListener('click', () => {
+        console.log('В паллетах');
+        productslisitem2three.classList.add('droplist-one-span--none')
+        productslisitem2one.classList.remove('droplist-one-span--none')
+        productslisitem2two.classList.remove('droplist-one-span--none')
+    })
+}
+if (btn2) {
+    btn2.addEventListener('click', () => {
+        console.log('Большие сумки');
+        productslisitem2three.classList.remove('droplist-one-span--none')
+        productslisitem2one.classList.add('droplist-one-span--none')
+        productslisitem2two.classList.add('droplist-one-span--none')
+    })
+}
 
-btn1.addEventListener('click', () => {
-    console.log('В паллетах');
-    productslisitem2three.classList.add('droplist-one-span--none')
-    productslisitem2one.classList.remove('droplist-one-span--none')
-    productslisitem2two.classList.remove('droplist-one-span--none')
-})
-btn2.addEventListener('click', () => {
-    console.log('Большие сумки');
-    productslisitem2three.classList.remove('droplist-one-span--none')
-    productslisitem2one.classList.add('droplist-one-span--none')
-    productslisitem2two.classList.add('droplist-one-span--none')
-})
 sectionBtns.forEach(btn => {
     btn.addEventListener('click', () => {
         sectionBtns.forEach(btn => {
