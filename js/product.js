@@ -446,7 +446,7 @@ const btn2 = document.querySelector('.lng-trans-287')
 if (btn1) {
     btn1.addEventListener('click', () => {
         console.log('В паллетах');
-        productslisitem2three.classList.add('droplist-one-span--none')
+        productslisitem2three.classList.remove('droplist-one-span--none')
         productslisitem2one.classList.remove('droplist-one-span--none')
         productslisitem2two.classList.remove('droplist-one-span--none')
     })
